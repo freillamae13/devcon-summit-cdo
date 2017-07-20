@@ -615,220 +615,26 @@ img {
 	appearance: $args;
 }
 
-/* Hayward Reusables */
-.clearfix  {
-	clear: both;
-}
-.btn {
-	font-family: 'Godus-Bold';
-	font-size: 16px;
-	color: #2896ae;
-	&.btn-started {
-		color: #ffffff;
-		padding: 20px 15px;
-		background-color: #29aacc;
-		border-radius: 10px;
-		&:hover {
-			background-color: #2c7887;
-		}
-	}
-	&.btn-score {
-		color: #ffffff;
-		padding: 20px 15px;
-		background-color: #29aacc;
-		border-radius: 10px;
-		&:hover {
-			background-color: #2c7887;
-		}
-	}
-}
-.mobile {
-	display: none;
-}
-.intro-content {
-	background: url('../images/bg-grid.png') no-repeat;
-	padding: 4% 5% 0;
-	position: relative;
-	.heading {
-		margin: 0 0 5%;
-		.logo {
-			float: left;
-		}
-		.social-links {
+
+.main {
+	width: 100%;
+	background: url('../images/blue.png') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	.container {
+		// width: 1500px;
+		margin: 5% auto 0;
+		background: url('../images/devcon-building.png') no-repeat;
+		min-height: 700px;
+		-webkit-background-size: contain;
+		-moz-background-size: contain;
+		-o-background-size: contain;
+		background-size: contain;
+		.right-content {
+			width: 50%;
 			float: right;
-			img {
-				display: inline-block;
-				&:nth-child(1) {
-					margin-right: 35px;
-				}
-			}
-		}
-	}
-
-	.content {
-		padding: 0 9%;
-		&.house {
-			margin: 7% 0 15%;
-			.left-panel {
-				width: 50%;
-				float: left;
-				h1 {
-					font-family: 'Godus-Bold';
-					font-size: 68px;
-					color: #2896ae;
-				}
-				p {
-					margin: 10% 0;
-					padding: 0 15% 0 0;
-					font-family: 'Godus-Regular';
-					color: #777777;
-					font-size: 16px;
-				}
-			}
-			.right-panel {
-				float: right;
-				width: 50%;
-				padding: 0 0 0 3%;
-				z-index: 9001;
-			}
-		}
-
-		&.air-quality {
-			margin: 0 0 15%;
-			.right-panel {
-				width: 50%;
-				padding: 0 0 0 3%;
-				float: right;
-				h2 {
-					font-family: 'Godus-Bold';
-					font-size: 53px;
-					color: #2896ae;
-				}
-				p {
-					margin: 10% 0;
-					padding: 0 15% 0 0;
-					font-family: 'Godus-Regular';
-					color: #777777;
-					font-size: 16px;
-				}
-				.statistics {
-					.numbers {
-						position: relative;
-						&:nth-child(1) {
-							margin: 0 0 4%;
-						}
-						.green {
-							display: inline-block;
-							font-family: 'Godus-Bold';
-							color: #1ba53e;
-							font-size: 42px;
-						}
-						p {
-							display: inline-block;
-							color: #1bc185;
-							font-size: 16px;
-							font-family: 'Godus-Regular';
-							width: 40%;
-							margin: 0 0 0 4%;
-							padding: 0;
-						}
-					}
-				}
-			}
-			.left-panel {
-				float: left;
-				width: 50%;
-				padding: 0 3% 0 0;
-			}
-		}
-		&.score {
-			margin-top: 10%;
-			.right-panel {
-				float: right;
-				width: 50%;
-				padding: 0 3% 0 0;
-			}
-			.left-panel {
-				float: left;
-				width: 50%;
-				h2 {
-					font-family: 'Godus-Bold';
-					font-size: 53px;
-					color: #2896ae;
-				}
-				p {
-					margin: 10% 0;
-					padding: 0 15% 0 0;
-					font-family: 'Godus-Regular';
-					color: #777777;
-					font-size: 16px;
-				}
-				.subgraph {
-					color: #777777;
-					font-size: 26px;
-					h3 {
-						text-transform: uppercase;
-						
-						font-family: 'Godus-Bold';
-					}
-					p {
-						font-family: 'Godus-Regular';
-						margin: 0;
-						padding: 0;
-						width: 55%;
-					}
-				}
-			}
-		}
-
-		&.get-score {
-			text-align: center;
-			position: relative;
-			margin: 9% 0;
-		}
-
-		&.pages {
-			// padding: 0 0 22%;
-			// background: url("../images/house-checklist.png") no-repeat 40% 5%;
-			.panel {
-				float: left;
-				margin: 0;
-				display: inline-block;
-				width: 65%;
-				padding: 0 0 20%;
-				h1 {
-					font-family: 'Elmukta-Bold';
-					font-size: 68px;
-					color: #2896ae;
-				}
-				.text {
-
-					p {
-						font-family: 'Elmukta-Regular';
-						color: #404142;
-						font-size: 22px;
-						padding: 0;
-
-						&:nth-child(1) {
-							margin: 4% 0;
-							width: 60%;
-						}
-						&:last-child {
-							margin: 0 0 7%;
-							width: 45%;
-						}
-					}
-				}
-			}
-			.img-container {
-				position: absolute;
-				right: 15%;
-				top: 30%;
-				img {
-					max-width: 80%;
-					float: right;
-				}
-			}
 		}
 	}
 }

@@ -388,166 +388,23 @@ img.right, img.alignright {
   animation-name: DropDown; }
 
 /* @MIXIN -----------------------------------------------------------*/
-/* Hayward Reusables */
-.clearfix {
-  clear: both; }
-
-.btn {
-  font-family: 'Godus-Bold';
-  font-size: 16px;
-  color: #2896ae; }
-  .btn.btn-started {
-    color: #ffffff;
-    padding: 20px 15px;
-    background-color: #29aacc;
-    border-radius: 10px; }
-    .btn.btn-started:hover {
-      background-color: #2c7887; }
-  .btn.btn-score {
-    color: #ffffff;
-    padding: 20px 15px;
-    background-color: #29aacc;
-    border-radius: 10px; }
-    .btn.btn-score:hover {
-      background-color: #2c7887; }
-
-.mobile {
-  display: none; }
-
-.intro-content {
-  background: url("../images/bg-grid.png") no-repeat;
-  padding: 4% 5% 0;
-  position: relative; }
-  .intro-content .heading {
-    margin: 0 0 5%; }
-    .intro-content .heading .logo {
-      float: left; }
-    .intro-content .heading .social-links {
+.main {
+  width: 100%;
+  background: url("../images/blue.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .main .container {
+    margin: 5% auto 0;
+    background: url("../images/devcon-building.png") no-repeat;
+    min-height: 700px;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain; }
+    .main .container .right-content {
+      width: 50%;
       float: right; }
-      .intro-content .heading .social-links img {
-        display: inline-block; }
-        .intro-content .heading .social-links img:nth-child(1) {
-          margin-right: 35px; }
-  .intro-content .content {
-    padding: 0 9%; }
-    .intro-content .content.house {
-      margin: 7% 0 15%; }
-      .intro-content .content.house .left-panel {
-        width: 50%;
-        float: left; }
-        .intro-content .content.house .left-panel h1 {
-          font-family: 'Godus-Bold';
-          font-size: 68px;
-          color: #2896ae; }
-        .intro-content .content.house .left-panel p {
-          margin: 10% 0;
-          padding: 0 15% 0 0;
-          font-family: 'Godus-Regular';
-          color: #777777;
-          font-size: 16px; }
-      .intro-content .content.house .right-panel {
-        float: right;
-        width: 50%;
-        padding: 0 0 0 3%;
-        z-index: 9001; }
-    .intro-content .content.air-quality {
-      margin: 0 0 15%; }
-      .intro-content .content.air-quality .right-panel {
-        width: 50%;
-        padding: 0 0 0 3%;
-        float: right; }
-        .intro-content .content.air-quality .right-panel h2 {
-          font-family: 'Godus-Bold';
-          font-size: 53px;
-          color: #2896ae; }
-        .intro-content .content.air-quality .right-panel p {
-          margin: 10% 0;
-          padding: 0 15% 0 0;
-          font-family: 'Godus-Regular';
-          color: #777777;
-          font-size: 16px; }
-        .intro-content .content.air-quality .right-panel .statistics .numbers {
-          position: relative; }
-          .intro-content .content.air-quality .right-panel .statistics .numbers:nth-child(1) {
-            margin: 0 0 4%; }
-          .intro-content .content.air-quality .right-panel .statistics .numbers .green {
-            display: inline-block;
-            font-family: 'Godus-Bold';
-            color: #1ba53e;
-            font-size: 42px; }
-          .intro-content .content.air-quality .right-panel .statistics .numbers p {
-            display: inline-block;
-            color: #1bc185;
-            font-size: 16px;
-            font-family: 'Godus-Regular';
-            width: 40%;
-            margin: 0 0 0 4%;
-            padding: 0; }
-      .intro-content .content.air-quality .left-panel {
-        float: left;
-        width: 50%;
-        padding: 0 3% 0 0; }
-    .intro-content .content.score {
-      margin-top: 10%; }
-      .intro-content .content.score .right-panel {
-        float: right;
-        width: 50%;
-        padding: 0 3% 0 0; }
-      .intro-content .content.score .left-panel {
-        float: left;
-        width: 50%; }
-        .intro-content .content.score .left-panel h2 {
-          font-family: 'Godus-Bold';
-          font-size: 53px;
-          color: #2896ae; }
-        .intro-content .content.score .left-panel p {
-          margin: 10% 0;
-          padding: 0 15% 0 0;
-          font-family: 'Godus-Regular';
-          color: #777777;
-          font-size: 16px; }
-        .intro-content .content.score .left-panel .subgraph {
-          color: #777777;
-          font-size: 26px; }
-          .intro-content .content.score .left-panel .subgraph h3 {
-            text-transform: uppercase;
-            font-family: 'Godus-Bold'; }
-          .intro-content .content.score .left-panel .subgraph p {
-            font-family: 'Godus-Regular';
-            margin: 0;
-            padding: 0;
-            width: 55%; }
-    .intro-content .content.get-score {
-      text-align: center;
-      position: relative;
-      margin: 9% 0; }
-    .intro-content .content.pages .panel {
-      float: left;
-      margin: 0;
-      display: inline-block;
-      width: 65%;
-      padding: 0 0 20%; }
-      .intro-content .content.pages .panel h1 {
-        font-family: 'Elmukta-Bold';
-        font-size: 68px;
-        color: #2896ae; }
-      .intro-content .content.pages .panel .text p {
-        font-family: 'Elmukta-Regular';
-        color: #404142;
-        font-size: 22px;
-        padding: 0; }
-        .intro-content .content.pages .panel .text p:nth-child(1) {
-          margin: 4% 0;
-          width: 60%; }
-        .intro-content .content.pages .panel .text p:last-child {
-          margin: 0 0 7%;
-          width: 45%; }
-    .intro-content .content.pages .img-container {
-      position: absolute;
-      right: 15%;
-      top: 30%; }
-      .intro-content .content.pages .img-container img {
-        max-width: 80%;
-        float: right; }
 
 /*# sourceMappingURL=style.css.map */
