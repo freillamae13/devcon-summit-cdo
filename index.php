@@ -1,30 +1,17 @@
-<!doctype html>
+<?php
+/**
+ * Front to the WordPress application. This file doesn't do anything, but loads
+ * wp-blog-header.php which does and tells WordPress to load the theme.
+ *
+ * @package WordPress
+ */
 
-<html lang="en">
-<head>
-	<meta charset="utf-8">
+/**
+ * Tells WordPress to load the WordPress theme and output it.
+ *
+ * @var bool
+ */
+define('WP_USE_THEMES', true);
 
-	<title>Devcon Summit CDO 2017</title>
-
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
-
-</head>
-
-<body>
-	<section class="main">
-		<div class="container">
-			<div class="right-content">
-				<div class="logo-container">
-					<img src="images/logo.png">
-					<h1>Devcon Summit: CDO Edition</h1>
-					<p>The Biggest Developer Conference in the Philippines Goes to Cagayan de Oro City!</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<script src="js/jquery-2.2.4.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-</body>
-</html>
+/** Loads the WordPress Environment and Template */
+require( dirname( __FILE__ ) . '/wp-blog-header.php' );
