@@ -13,4 +13,5 @@ sr.reveal('.subscription-text', { duration: 5000 });
 sr.reveal('a.subscription-button', { duration: 5000 });
 sr.reveal('.subsciption-form input', { duration: 5000 });
 sr.reveal('.hashtag-devcon', { duration: 8000 });
+
 });

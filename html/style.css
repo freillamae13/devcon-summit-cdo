@@ -22,7 +22,7 @@ body{
 	max-width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 115px;
+	/*padding-top: 115px;*/
 }
 
 .container {
@@ -41,7 +41,7 @@ body{
 	max-width: 100%
 }
 
-.subsciption-form h2{
+.subsciption-form h2, .sponsor-title {
 	font-family: 'Roboto', sans-serif;
     font-weight: 700;
     color: #72bf44;
@@ -125,6 +125,7 @@ a.subscription-button {
     text-decoration: none;
     line-height: 2.7;
     max-width: 100%;
+    margin-top: 30px;
 }
 
 a.subscription-button:hover{
@@ -145,4 +146,124 @@ img.devcon-city{
 	text-align: center;
 }
 
+.registration-text{
+	margin-bottom: 20px;
+}
 
+.header-navigation ul li{
+ 	list-style-type: none;
+ 	float: left;
+ 	width: 135px;
+ 	text-align: center;
+ 	padding: 12px;
+}
+
+.header-navigation ul li:last-child {
+	width: 150px;
+}
+
+.subsciption-form{
+	margin-top: 20px;
+}
+
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+
+
+.header-navigation {
+	width: 960px;
+	padding-left: 15px;
+	padding-right: 15px;
+	box-sizing: border-box;
+	margin: 0 auto;
+	background-color: #24ABE2;
+	border-radius: 2px;
+
+}
+
+.header-navigation a{
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.header-navigation a:hover, .header-navigation a.active{
+	color: #41474D;
+	text-decoration: none;
+
+}
+
+.sponsor-carrousel.slick-initialized.slick-slider{
+	height: 350px;
+	min-height: 350px;
+}
+
+.sponsor-carrousel div .row div img {
+	width: 100%;
+}
+
+.sponsor-carrousel .slick-slide{
+	outline: 0;
+}
+
+.sponsor-carrousel .slick-prev,.sponsor-carrousel .slick-next{
+	top: -60px;
+}
+.sponsor-carrousel .slick-prev{
+	left: 60px;
+}
+
+.sponsor-carrousel .slick-next{
+	right: 60px;
+}
+
+.sponsor-carrousel .slick-prev:before{
+	content: '\f0d9';
+	font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #72bf44;
+    font-size: 35px;
+}
+
+.sponsor-carrousel .slick-next:before{
+	content: '\f0da';
+	font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #72bf44;
+    font-size: 35px;
+}
+ .sponsor-carrousel img{
+ 	margin-bottom: 10px;
+ }
+
+ .registration-text{
+ 	position: relative;
+ }
+
+ .registration-text:after{
+ 	content: '';
+ 	position: absolute;
+ 	display: block;
+ 	left: 0px;
+ 	right: 0;
+ 	bottom: -13px;
+ 	border: 1px solid #333333;
+ }
