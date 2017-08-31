@@ -201,7 +201,7 @@ img.devcon-city{
 	text-transform: uppercase;
 }
 
-.header-navigation a:hover, .header-navigation a.active{
+.header-navigation a:hover, .header-navigation a:focus, .header-navigation a.active {
 	color: #41474D;
 	text-decoration: none;
 
