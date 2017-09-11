@@ -11,9 +11,9 @@
 body{
 	background-image: url('img/landing-page-design.png');
 	-webkit-background-size: cover;
-	  -moz-background-size: cover;
-	  -o-background-size: cover;
-	  background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 
@@ -191,6 +191,8 @@ img.devcon-city{
 	margin: 0 auto;
 	background-color: #24ABE2;
 	border-radius: 2px;
+	z-index: 900;
+	position: relative;
 
 }
 
@@ -267,3 +269,9 @@ img.devcon-city{
  	bottom: -13px;
  	border: 1px solid #333333;
  }
+
+.devcon-city-container img {
+	transform: translate(-7%, -10%) scale(0.9) !important;
+	-webkit-transform: translate(-7%, -10%) scale(0.9) !important;
+	z-index: -1;
+}
